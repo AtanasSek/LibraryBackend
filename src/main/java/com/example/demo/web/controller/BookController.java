@@ -1,20 +1,13 @@
 package com.example.demo.web.controller;
 
-
 import com.example.demo.model.Author;
 import com.example.demo.model.Book;
-import com.example.demo.model.BookId;
 import com.example.demo.service.AuthorService;
 import com.example.demo.service.BookService;
-import com.fasterxml.jackson.core.JsonParser;
-import net.bytebuddy.asm.Advice;
-import net.minidev.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.view.RedirectView;
+
 
 import java.time.LocalDate;
 import java.util.List;

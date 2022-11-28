@@ -1,7 +1,6 @@
 package com.example.demo.web.controller;
 
 import com.example.demo.model.Author;
-import com.example.demo.model.AuthorId;
 import com.example.demo.service.AuthorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
