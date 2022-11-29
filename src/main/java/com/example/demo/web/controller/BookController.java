@@ -25,7 +25,7 @@ public class BookController {
         LocalDate ld = LocalDate.parse("1996-05-14");
         authorService.setAuthor("test","author",ld);
         Author author = authorService.getAuthor("test","author").get();
-        bookService.save("testTitle",author,"testGenre");
+        bookService.save("testTitle",author, Book.Genre.fiction);
     }
 
 

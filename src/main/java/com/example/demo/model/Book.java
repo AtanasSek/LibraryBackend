@@ -5,23 +5,31 @@ import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+
+
 @Entity
 public class Book {
 
     @EmbeddedId
     private BookId bookId; //name and author(s)
 
-    private String genre;
+    //private String genre;
+
+    public enum Genre{
+        fiction, nonfiction;
+
+    }
+    private Genre genre;
 
     public Book() {
     }
 
-    public Book(String bookTitle, Author author, String genre){
+    public Book(String bookTitle, Author author, Genre genre){
         this.bookId = new BookId(bookTitle,author);
         this.genre = genre;
     }
 
-    public String getGenre(){
+    public Genre getGenre(){
         return genre;
     }
 

@@ -46,7 +46,7 @@ public class BookServiceImpl implements BookService {
         return false;
     }
 
-    public Book save(String bookTitle, Author author, String bookGenre) {
+    public Book save(String bookTitle, Author author, Book.Genre bookGenre) {
         return this.bookRepositoryJpa.save(new Book(bookTitle, author, bookGenre));
     }
 }
